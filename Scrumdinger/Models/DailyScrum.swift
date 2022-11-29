@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct DailyScrum: Identifiable{
     let id: UUID
     var title: String
@@ -31,6 +30,13 @@ extension DailyScrum{
             self.id = id
             self.name = name
         }
+    }
+    struct Data{
+        var title:String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 5
+        var theme:Theme = .seafoam
+        
     }
 }
 extension DailyScrum{
