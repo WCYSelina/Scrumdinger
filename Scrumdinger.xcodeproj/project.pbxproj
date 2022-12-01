@@ -62,8 +62,6 @@
 		6A8AEF4D292072AC0098807C = {
 			isa = PBXGroup;
 			children = (
-				6A1253592938487D008076A8 /* ThemePicker.swift */,
-				6A7240AA293643710006E961 /* ThemeView.swift */,
 				6A8AEF58292072AC0098807C /* Scrumdinger */,
 				6A8AEF57292072AC0098807C /* Products */,
 			);
@@ -80,6 +78,8 @@
 		6A8AEF58292072AC0098807C /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				6A1253592938487D008076A8 /* ThemePicker.swift */,
+				6A7240AA293643710006E961 /* ThemeView.swift */,
 				6A8AEF5D292072AD0098807C /* Assets.xcassets */,
 				6A8AEF5F292072AD0098807C /* Preview Content */,
 				6A0070F02920E5DD00EE9947 /* CardView.swift */,
