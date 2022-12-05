@@ -26,6 +26,13 @@ struct MeetingView: View {
                 .accessibilityLabel("Next Speaker")
             }
         }.padding()
+            .onAppear{
+                scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+                    scrumTimer.startScrum()
+            }
+            .onDisappear{
+                scrumTimer.stopScrum()
+            }
         .foregroundColor(scrum.theme.accentColor)
         .navigationBarTitleDisplayMode(.inline)
     }
