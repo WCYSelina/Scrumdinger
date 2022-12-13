@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class ScrumStore:ObservableObject{
     @Published var scrums: [DailyScrum] = []
@@ -13,6 +14,18 @@ class ScrumStore:ObservableObject{
     private static func fileURL() throws -> URL{
         try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
             .appendingPathComponent("scrums.data")
+    }
+    static func load() async throws -> [DailyScrum] {
+        try await withCheckedThrowingContinuation{ continuation in
+            load{ result in
+                switch result{
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                case .success(let scrum):
+                    continuation.resume(returning: scrum)
+                }
+            }
+        }
     }
     static func load(completion: @escaping (Result<[DailyScrum],Error>)->Void){
         DispatchQueue.global(qos: .background).async {
