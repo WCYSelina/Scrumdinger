@@ -26,6 +26,8 @@
 		6A8AEF5C292072AC0098807C /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8AEF5B292072AC0098807C /* MeetingView.swift */; };
 		6A8AEF5E292072AD0098807C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8AEF5D292072AD0098807C /* Assets.xcassets */; };
 		6A8AEF61292072AD0098807C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8AEF60292072AD0098807C /* Preview Assets.xcassets */; };
+		6A9F549029528CA100230352 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F548F29528CA100230352 /* MeetingTimerView.swift */; };
+		6A9F5492295291F300230352 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F5491295291F300230352 /* SpeakerArc.swift */; };
 		6ABFE844294D73C500CA2F47 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABFE843294D73C500CA2F47 /* ErrorWrapper.swift */; };
 		6ABFE846294D746400CA2F47 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABFE845294D746400CA2F47 /* ErrorView.swift */; };
 		6ADDB01D2929A3FA0034286A /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADDB01C2929A3FA0034286A /* ScrumsView.swift */; };
@@ -53,6 +55,8 @@
 		6A8AEF5B292072AC0098807C /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		6A8AEF5D292072AD0098807C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A8AEF60292072AD0098807C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A9F548F29528CA100230352 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		6A9F5491295291F300230352 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		6ABFE843294D73C500CA2F47 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		6ABFE845294D746400CA2F47 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		6ADDB01C2929A3FA0034286A /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		6A8AEF58292072AC0098807C /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				6A9F548F29528CA100230352 /* MeetingTimerView.swift */,
 				6ABFE845294D746400CA2F47 /* ErrorView.swift */,
 				6A7240A8293625E50006E961 /* DetailEditView.swift */,
 				6A0070F02920E5DD00EE9947 /* CardView.swift */,
@@ -128,6 +133,7 @@
 				6A0E5DC2293DFA2300D33814 /* MeetingHeaderView.swift */,
 				6A0E5DC8293E075D00D33814 /* MeetingFooterView.swift */,
 				6ADDB01E2929B3BE0034286A /* DetailView.swift */,
+				6A9F5491295291F300230352 /* SpeakerArc.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				6A0070ED2920E2B500EE9947 /* DailyScrum.swift in Sources */,
 				6ADDB01F2929B3BE0034286A /* DetailView.swift in Sources */,
 				6A0E5DC3293DFA2300D33814 /* MeetingHeaderView.swift in Sources */,
+				6A9F549029528CA100230352 /* MeetingTimerView.swift in Sources */,
 				6A7240A9293625E50006E961 /* DetailEditView.swift in Sources */,
 				6ABFE844294D73C500CA2F47 /* ErrorWrapper.swift in Sources */,
 				6A06D03A2921A74300F5DF63 /* TrailingIconLabelStyle.swift in Sources */,
@@ -230,6 +237,7 @@
 				6A8AEF5A292072AC0098807C /* ScrumdingerApp.swift in Sources */,
 				6A7240AB293643710006E961 /* ThemeView.swift in Sources */,
 				6A0070F12920E5DD00EE9947 /* CardView.swift in Sources */,
+				6A9F5492295291F300230352 /* SpeakerArc.swift in Sources */,
 				6A0E5DCB293E105100D33814 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
